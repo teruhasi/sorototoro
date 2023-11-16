@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+      text-align: center;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* CS
+Sは見た目とか場所の指定だから、自由に書いて大丈夫 */
+    /* 色々自分でいじってみて〜〜*/
+
+    /* スライド全体の指定 */
+    .swiper {
+      width: 80%;
+      min-height: 320px; /* 最小の高さの指定*/
+      background-color: #62747A
+    }
+
+    /* 各スライドの指定 */
+    .swiper-slide {
+      text-align: center; /* テキストを真ん中にする */
+      font-size: 18px; /*テキストの大きさ*/
+      background: #62747A;
+      /* flexbox */
+      display: flex; 
+      justify-content: center; /* 横方向に中央 */
+      align-items: center; /* 縦方向に中央 */
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      /*---------------------*/
+    }
+
+    /* スライドの中のimgの指定 */
+    .swiper-slide img {
+      display: block;
+      /* サイズ指定 */
+      width: 80%;
+      height: 100%;
+      
+      object-fit: cover; /* 画像が範囲に収まるように自動調整する */
+    }
+
+    /* スライドを真ん中に設置してる */
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+header {
+  background-color: #9F9998;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  min-width: 375px;
+  width: 100%;
+  }
+
+  header img {
+    display: block;
+    width: 100%;
+  }
+
+main {
+  background-color: #9F9998;
+  margin: 0 auto;
+  text-align: center;
+  /* max-width: 375px; */
+  min-width: 100%;
+  }
+footer{
+  text-align: center;
+  background-color: #c8bbb9;
+  margin: 0 auto;
+  list-style-type: none;
+  font-size: 15px;
+  min-width: 100%;
+  text-align: left;
+  }
+
+.asd{
+  margin: 0 auto;   
+  width: 250px;
+  height: 150px;
+}
+.hdd{
+  margin: 0 auto; 
+  width: 250px;
+  height: 500px;
+}
+ul.footer-list {
+  padding: 0 15px;
+  list-style-type: none;
+}
+.footer-list_item{
+  margin-bottom: 5px;
+}
+#page_top{
+  width: 50px;
+  height: 50px; 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
